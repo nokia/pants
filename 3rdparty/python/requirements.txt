@@ -3,6 +3,7 @@ beautifulsoup4>=4.3.2,<4.4
 cffi==1.11.1
 contextlib2==0.5.5
 coverage>=4.5,<4.6
+cython==0.27.3
 docutils>=0.12,<0.13
 fasteners==0.14.1
 faulthandler==2.6

@@ -1,0 +1,22 @@
+python_library(
+    sources=[
+      'build_extension.py',
+      'build_wheel.py',
+      'cythonize.py',
+      'package_wheel.py'
+    ],
+    dependencies=[
+      'src/python/pants/task',
+      'src/python/pants/util',
+      'src/python/pants/build_graph',
+      'src/python/pants/backend/python/targets',
+      'src/python/pants/backend/python/tasks',
+      'src/python/pants/base:build_environment',
+      'contrib/cython/src/python/pants/contrib/cython/targets',
+      'contrib/cython/src/python/pants/contrib/cython/subsystems',
+      'contrib/cython/src/python/pants/contrib/cython:gen_utils'
+      'contrib/cython/src/python/pants/contrib/cython:python_extension_artifact',
+      '3rdparty/python/twitter/commons:twitter.common.collections',
+      '3rdparty/python:cython'
+    ]
+)
